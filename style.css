@@ -1,0 +1,233 @@
+body {
+    margin: 0px;
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+    font-family: 'Manrope';
+    font-size: 13px;
+    font-weight: 500;
+    color: hsl(217, 19%, 35%);
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.card-container {
+    background-color: #FFF;
+    max-width: 700px;
+    height: 280px;
+    display: flex;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.articleImg {
+    object-fit: cover;
+    object-position: left;
+    width: 36%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.content-container {
+    padding: 10px 30px 20px 30px;
+}
+
+.content-container h2{
+    font-weight: 700;
+}
+
+.content-container p {
+    line-height: 20px;
+    color: hsl(212, 23%, 69%);
+}
+
+.aurthorAndShare-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0px;
+}
+
+.aurtor {
+    display: flex;
+    align-items: center;
+}
+
+.aurthorImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.nameAndDate {
+    margin-left: 10px;
+}
+
+#aurthorName {
+    margin-bottom: 0px;
+}
+
+#date {
+    margin-top: 0px;
+}
+
+.shareIcon {
+    background-color: hsl(210, 46%, 95%);
+    padding: 10px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.socialIcon-container {
+    position: absolute;
+    top: 42%;
+    right: 16.5%;
+    color: hsl(212, 23%, 69%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    padding: 5px 25px;
+    visibility: hidden;
+}
+
+.socialIcon-container::after {
+    position: absolute;
+    content: "";
+    border-width: 5px;
+    border-style: solid;
+    border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+}
+
+.socialIcon-container span {
+    letter-spacing: 4px;
+    vertical-align: middle;
+    padding: 10px;
+    user-select: none;
+}
+
+.socialIcon-container img {
+    vertical-align: middle;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#IconAndShare-mobile {
+    padding: 20px;
+    color: hsl(212, 23%, 69%);
+    background-color: hsl(217, 19%, 35%);
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+.social-container {
+    display: flex;
+    align-items: center;
+}
+
+.social-container span {
+    font-size: 16px;
+    letter-spacing: 5px;
+    padding: 0px 20px 0px 10px;
+    user-select: none;
+} 
+
+.social-container img {
+    width: 25px;
+    padding: 0px 12px 0px;
+    cursor: pointer;
+} 
+
+.shareIcon-mobile {
+    background-color: hsl(210, 46%, 95%);
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 50%;
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .card-container {
+        flex-direction: column;
+        width: 90%;
+        background-color: #FFF;
+        height: auto;
+        position: relative;
+        padding-bottom: 0px;
+    }
+
+    .articleImg {
+        width: 100%;
+    }
+
+    .content-container {
+        margin-top: 20px;
+    }
+
+    .content-container h2 {
+        line-height: 25px;
+        font-weight: 700;
+    }
+
+    .content-container p {
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: 700;
+    }
+
+    .aurthorAndShare-desktop {
+        margin-bottom: -15px;
+    }
+
+    .socialIcon-container {
+        position: static;
+    }
+
+    /* .mobileView { 
+        display: none;
+    } */
+    .socialIcon-container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        bottom: 0;
+        top: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .socialIcon-container::after{
+        border-color: transparent transparent transparent transparent;
+    }
+
+    .shareIcon-mobile {
+        display: flex;
+    }
+
+  }
+
+
+
+
+
+
+
+.attribution { 
+    margin-top: 100px;
+    font-size: 11px;
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
